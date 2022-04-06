@@ -1,0 +1,21 @@
+{
+  "name": "employee-management-system-hwp",
+  "version": "1.0.0",
+  "description": "",
+  "main": "index.js",
+  "scripts": {
+    "start": "node index.js",
+    "seed": "node db/seed.js"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/hyep2/Employee-Management-System-HWP.git"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/hyep2/Employee-Management-System-HWP/issues"
+  },
+  "homepage": "https://github.com/hyep2/Employee-Management-System-HWP#readme"
+}
