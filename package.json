@@ -17,5 +17,8 @@
   "bugs": {
     "url": "https://github.com/hyep2/Employee-Management-System-HWP/issues"
   },
-  "homepage": "https://github.com/hyep2/Employee-Management-System-HWP#readme"
+  "homepage": "https://github.com/hyep2/Employee-Management-System-HWP#readme",
+  "dependencies": {
+    "console.table": "^0.10.0"
+  }
 }
