@@ -1,6 +1,8 @@
+require('dotenv').config()
+
 const mysql = require('mysql2');
 
-const db = mysql.createConnection('mysql://root:Ihatemath101$@localhost:3306/employeetracker_db');
+const db = mysql.createConnection(process.env.LOCAL_URL);
 
 module.exports = db; 
 

@@ -19,6 +19,7 @@
   },
   "homepage": "https://github.com/hyep2/Employee-Management-System-HWP#readme",
   "dependencies": {
-    "console.table": "^0.10.0"
+    "console.table": "^0.10.0",
+    "dotenv": "^16.0.0"
   }
 }
