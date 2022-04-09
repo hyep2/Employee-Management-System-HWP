@@ -73,7 +73,6 @@ function viewEmployees() {
   db.query('SELECT employee.id, employee.first_name, employee.last_name, role.title AS role, department.name AS department, employee.manager_id FROM employee LEFT JOIN role ON employee.role_id = role.id LEFT JOIN department ON role.department_id = department.id ', (err, employees) => {
     if (err) {console.log(err)}
     console.log('\n');
-    console.log(employees)
     console.table(employees);
     initQuestion();
   })
