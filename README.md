@@ -1,11 +1,11 @@
-# Employee-Management-System-HWP
 # ![Github License](https://img.shields.io/badge/license-APACH_2.0-blue.svg)
   
-# Hospital Management System 
+# Employee-Management-System -HWP
 
 ## Description
 
-What’s arguably the most important thing we focus on in our lives? It’s our health. There is no room for error when managing our health and our health providers need a simple, yet effective system to manage patients' health records and appointments all in one place. Our HMS is a computer system that helps manage the information related to health care and aids in the job completion of health care providers effectively. Admins/staff/doctors of small health clinics can use this application to easily access information about all employees, patients, and their appointments, as well as update/delete info.
+This employment management system is a command-line application that allows companies to view and interact with employee information stored in databases. The user can VIEW departments, roles, employees, ADD new departments, roles, employees, and UPDATE employee roles.
+This app uses node, inquirer to interact with user via command-line, and MySQL to connect with MySQL database and perform queries.
 
 ## Table of Contents
 * [Installation](#installation)
@@ -19,7 +19,7 @@ What’s arguably the most important thing we focus on in our lives? It’s our 
 To install necessary dependencies, run the following commands: 
 
 ```
-npm i, npm i express, npm i mysql2 sequelize, npm i dotenv, npm i bcrypt
+npm i, npm i express, npm i inquirer, npm i mysql2, npm i dotenv
 ```
 
 ## Usage
