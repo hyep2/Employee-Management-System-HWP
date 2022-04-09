@@ -52,9 +52,10 @@ initQuestion();
 
 //VIEWING FUNCTIONS
 function viewDepartments() {
-  db.query('SELECT * FROM department', (err, department) => {
+  db.query('SELECT department.id, department.name FROM department', (err, departments) => {
     if(err) {console.log(err)}
-    console.table(department)
+    console.log('\n');
+    console.table(departments)
     initQuestion();
   })
 }
@@ -62,13 +63,20 @@ function viewDepartments() {
 function viewRoles() {
   db.query('SELECT role.id, role.title, role.salary, department.name AS department FROM role JOIN department ON role.department_id = department.id', (err, roles) => {
     if(err) {console.log(err)}
+    console.log('\n');
     console.table(roles);
     initQuestion();
   })
 }
 
 function viewEmployees() {
-  
+  db.query('SELECT employee.id, employee.first_name, employee.last_name, role.title AS role, department.name AS department, employee.manager_id FROM employee LEFT JOIN role ON employee.role_id = role.id LEFT JOIN department ON role.department_id = department.id ', (err, employees) => {
+    if (err) {console.log(err)}
+    console.log('\n');
+    console.log(employees)
+    console.table(employees);
+    initQuestion();
+  })
 }
 
 //ADDING FUNCTIONS
