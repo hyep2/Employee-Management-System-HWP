@@ -60,11 +60,15 @@ function viewDepartments() {
 }
 
 function viewRoles() {
-
+  db.query('SELECT role.id, role.title, role.salary, department.name AS department FROM role JOIN department ON role.department_id = department.id', (err, roles) => {
+    if(err) {console.log(err)}
+    console.table(roles);
+    initQuestion();
+  })
 }
 
 function viewEmployees() {
-
+  
 }
 
 //ADDING FUNCTIONS
